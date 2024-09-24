@@ -29,6 +29,7 @@ export const ListEmployeeComponent = () => {
     console.log(id);
     deleteEmployee(id)
       .then((response) => {
+        console.log(response.data);
         getAllEmployees();
       })
       .catch((error) => {
